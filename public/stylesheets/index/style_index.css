@@ -1,0 +1,375 @@
+/* ----------------------------------General styles--------------------------------------------------- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+    
+}
+
+
+
+/* ----------------------------------Header styles--------------------------------------------------- */
+
+.header{
+  background-color: #000000f5;
+  padding-inline: 16px;  /* To cellpone */
+
+  position: fixed;               /* Makes the element fixed */
+  width: 100%;
+  z-index: 100;
+}
+
+.nav{
+  max-width: 1280px;
+  height: 70px;
+  margin-inline: auto;
+  padding: 10px 0;
+
+  display: flex; 
+  justify-content: space-between; /* coloca um espaçamento esntre os intens */
+  align-items: center;
+}
+
+/* Modifica o desingner do texto */
+
+
+.nav-list a{
+	text-decoration: none;
+  color: #fff;
+  display: inline;
+  margin: 0 1%;
+  padding-block: 16px;
+  transition: 0.4s;
+}
+
+.nav-list{
+  display: flex; /* coloca os itens um do lado do outro */
+  gap: 32px;
+  list-style: none;
+}
+
+.logo{
+  font-size: 50%;
+}
+
+
+
+/* ----------------------------------Pag styles--------------------------------------------------- */
+
+main {
+  margin: 0px auto;
+  padding: 0x;
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section{
+  margin-bottom: 20em;
+}
+
+
+
+/* --- Part 1 styles ---*/
+
+.part0{
+  height: 70px;
+}
+
+
+.part1{
+  height: calc(190vh);
+  background: center / cover no-repeat url("/images/p1.png");
+
+  color: white;
+  font-family: sans-serif;
+  font-size: 150%;
+  line-height: 20px;
+}
+
+.box1{
+  transform: translate(0%, 50%); 
+  margin-left: 3%;
+}
+
+/* --- Part 2 styles ---*/
+
+.part2{
+  height: calc(150vh);
+  background: center / cover no-repeat url("/images/p2.png");
+  margin-top: 40%;
+
+  color: white;
+  font-family: sans-serif;
+  font-size: 80%;
+  line-height: 20px;
+}
+
+.box2{
+  transform: translate(0%, 150%);
+  text-align: center;
+}
+
+
+  
+/* --- Part 3 styles ---*/
+
+.part3{
+  margin-top: 40%;
+
+  color: white;
+  font-family: sans-serif;
+  font-size: 80%;
+  line-height: 20px;
+}
+
+.list3{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 32px;
+  overflow: hidden;
+}
+
+.box3{
+  text-align: center;
+    
+}
+.navcontene{
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.button6{
+  
+  cursor: absolute;
+  margin-top: 10%;
+  z-index: 20;
+}
+
+.button7{
+  position: absolute;
+  cursor: pointer;
+  margin-top: 10%;
+  z-index: 20;
+  right: 0;
+}
+
+.boxSlide, .boxSlide1Slide{
+  position: relative;
+  display: flex;
+  gap: 32px;
+  transition: 1s;
+}
+
+.nav-list a:hover{
+  color: #9e1414;
+}
+
+
+
+
+.part3-1{
+  overflow: hidden;
+}
+
+.slick-slide img {
+  width: 100%;
+  overflow: hidden;
+  display: none !important;
+}
+
+
+
+/* --- overflow: hidden; esconde o que passa da tela ---*/
+
+
+/* --- Part 4 styles ---*/
+
+.part4{
+  height: calc(160vh);
+  background: center / cover no-repeat url("/images/p6.png");
+  margin-top: 40%;
+  
+
+  color: white;
+  font-family: sans-serif;
+  font-size: 150%;
+  line-height: 20px;
+}
+
+.box4{
+  transform: translate(0%, 50%); 
+  margin-left: 3%;
+}
+
+.part5{
+  margin-top: 40%;
+}
+ 
+
+/* ---------------------------------- Footer styles --------------------------------------------------- */
+
+
+
+footer a{
+  text-decoration: none;
+  color: #fff;
+  padding-block: 16px;
+  transition: 0.4s;
+  display: flex;
+}
+
+footer a:hover{
+  color: #9e1414;
+}
+
+
+.footer-cap{
+  background-color: #4A1717;
+  color: #fff;
+  padding: 2% 0;
+  gap: 50%;
+}
+
+.footer-cap-box{
+  margin-left: 15%;
+
+  display: flex;
+  text-align: center;
+}
+
+.footer-cap-email{
+  margin-left: 20%;
+
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+.footer-cap-text{
+  margin-top: 2.2%;
+}
+
+
+.footer-cap-email input{
+  border: 2px solid white;
+  background-color: #4A1717;
+  border-radius: 5px;
+  padding: 7% 4%;
+  width: 200%;
+
+  color: #5a4b4b;
+  
+}
+
+.footer-cap-email button{
+  margin-top: 10%;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 7% 4%;
+  width: 200%;
+
+  color: #4A1717;
+  font-size: 140%;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+.footer-med{
+  background-color: #000000;
+  color: #fff;
+  
+  padding: 10px 0;
+}
+
+.footer-med-box{
+  margin-left: 12%;
+  display: flex;
+  
+  gap: 8%; 
+
+  font-size: 90%;
+  
+}
+
+.footer-med-icons ul{
+  display: flex;
+  list-style: none;
+  gap: 10%;
+  cursor: pointer;
+
+}
+
+
+.footer-med-menu a{
+
+  display: flex;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.footer-bar{
+  background-color: #4A1717;
+  color: #fff;
+  text-align: center;
+  padding: 1px 0;
+}
+
+
+
+
+
+
+.footer-end{
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer-end-box{
+  margin-left: 12%;
+  display: flex;
+  gap: 5.5%;
+
+  font-size: 90%;
+}
+
+.footer-end-icons div{
+  display: flex;
+  list-style: none;
+  gap: 10%;
+  margin-right: 50%;
+}
+
+.footer-end-cop{
+  font-size: 70%;
+}
+
+.footer-end-copBox{
+  text-align: left;
+}
+
+.footer-end-icons li{
+  cursor: pointer;
+}

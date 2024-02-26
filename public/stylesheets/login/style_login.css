@@ -1,0 +1,149 @@
+/* ----------------------------------General styles--------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+  
+/* ----------------------------------Header styles--------------------------------------------------- */
+
+
+/* Header */
+
+.header {
+  background: #000000f5;
+  padding-inline: 16px;
+}
+
+/* Conteiner */
+
+.nav {
+  max-width: 1280px;
+  height: 70px;
+  margin-inline: auto;
+
+  display: flex;                       /* Coloca os item um do lado do outro */
+  justify-content: space-between;      /* Coloca espaçamento entre os itens */
+  align-items: center;                 /* Alinha os itens no ecentro */
+}
+
+
+.nav-list {
+  display: flex;                       /* Coloca os itens em fila horizontal */
+  gap: 32px;                           /* Mexe no espaçamneto entre os itens */
+  list-style: none;                    /* Tira as bolinhas da lista*/
+}
+
+
+/* Text style */
+
+a {
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.nav-list a {
+  font-size: 18px;
+  color: #fff;
+  padding-block: 16px;
+  transition: 0.4s;
+}
+
+
+.nav-list a:hover{
+  color: #9e1414;
+}
+
+.logo {
+  font-size: 48px;
+}
+
+
+
+
+
+
+
+
+
+  /* ----------------------------------Pag styles--------------------------------------------------- */
+
+
+
+.hero {
+  height: calc(100vh - 70px);
+  background: center / cover no-repeat url("/images/freme1.png");
+  color: #545f71;
+
+  font-family: sans-serif;
+}
+
+.space{
+  height: 10vh;
+}
+
+.form{
+  width: 26%;
+  background-color: #13141600;
+  margin-left: 11%; 
+}
+
+.form-header{
+  width: 100%;
+  height: 55vh;
+  
+}
+
+
+
+.login-bar{
+  display: flex;
+  flex-direction: column;
+}
+
+.login-bar input{
+  margin: 0.6rem 0;        /* espassamento*/
+  padding: 5%;  /* grosura do botão*/
+  border: none;
+  border-radius: 3px;
+  box-shadow: 1px 1px 6px #0000001c;
+  font-size: 0.8rem;
+
+
+}
+
+
+
+.login-bar button {
+  color: #ffffff;
+  width: 100%;
+  margin-top: 7rem;
+  border: none;
+  background-color: #545F71;
+  padding: 4% 4%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-bar button:hover{
+  background-color: #9e1414;
+}
+
+
+.login-button button {
+  color: #545F71;
+  margin: -9rem 10%;
+  border: none;
+  background-color: rgba(84, 95, 113, 0);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.login-button button:hover{
+  color: #9e1414;
+}
+
+
+

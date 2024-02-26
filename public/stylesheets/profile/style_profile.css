@@ -1,0 +1,229 @@
+/* ----------------------------------General styles--------------------------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+      
+  }
+  
+  
+  
+  /* ----------------------------------Header styles--------------------------------------------------- */
+  
+  
+  
+  
+  
+  .header{
+    background-color: #000000f5;
+    padding-inline: 16px;  /* To cellpone */
+  
+    position: fixed;               /* Makes the element fixed */
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .nav{
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+    padding: 10px 0;
+  
+    display: flex; 
+    justify-content: space-between; /* coloca um espaçamento esntre os intens */
+    align-items: center;
+  }
+  
+  /* Modifica o desingner do texto */
+  
+  
+  .nav-list a{
+      text-decoration: none;
+    color: #fff;
+    display: inline;
+    margin: 0 1%;
+    padding-block: 16px;
+  }
+  
+  .nav-list{
+    display: flex; /* coloca os itens um do lado do outro */
+    gap: 32px;
+    list-style: none;
+  }
+  
+  .logo{
+    font-size: 50%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ----------------------------------Pag styles--------------------------------------------------- */
+  
+  main {
+    margin: 0px auto;
+    padding: 0x;
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  section{
+    margin-bottom: 20em;
+  }
+  
+  
+  
+  /* --- Part 1 styles ---*/
+  
+  .part0{
+    height: 70px;
+  }
+  
+  
+  .part1{
+    height: calc(190vh);
+    background: center / cover no-repeat url("/images/p1.png");
+  
+    color: white;
+    font-family: sans-serif;
+    font-size: 150%;
+    line-height: 20px;
+  }
+  
+  .box1{
+    transform: translate(0%, 50%); 
+    margin-left: 3%;
+  }
+  
+  /* --- Part 2 styles ---*/
+  
+  .part2{
+    height: calc(150vh);
+    background: center / cover no-repeat url("/images/p2.png");
+    margin-top: 40%;
+  
+    color: white;
+    font-family: sans-serif;
+    font-size: 80%;
+    line-height: 20px;
+  }
+  
+  .box2{
+    transform: translate(0%, 150%);
+    text-align: center;
+  }
+  
+  
+    
+  /* --- Part 3 styles ---*/
+  
+  .part3{
+    margin-top: 40%;
+  
+    color: white;
+    font-family: sans-serif;
+    font-size: 80%;
+    line-height: 20px;
+  }
+  
+  .list3{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 32px;
+    overflow: hidden;
+  }
+  
+  .box3{
+    text-align: center;
+      
+  }
+  .navcontene{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+  }
+  
+  .button6{
+    
+    cursor: pointer;
+    margin-top: 10%;
+    z-index: 20;
+  }
+  
+  .button7{
+    position: absolute;
+    cursor: pointer;
+    margin-top: 10%;
+    z-index: 20;
+    right: 0;
+  }
+  
+  .boxSlide, .boxSlide1Slide{
+    position: relative;
+    display: flex;
+    gap: 32px;
+    transition: 1s;
+  }
+  
+  
+  
+  /* --- overflow: hidden; esconde o que passa da tela ---*/
+  
+  
+  /* --- Part 4 styles ---*/
+  
+  .part4{
+    height: calc(160vh);
+    background: center / cover no-repeat url("/images/p6.png");
+    margin-top: 40%;
+    
+  
+    color: white;
+    font-family: sans-serif;
+    font-size: 150%;
+    line-height: 20px;
+  }
+  
+  .box4{
+    transform: translate(0%, 50%); 
+    margin-left: 3%;
+  }
+  
+  
+   
+  
+  /* ---------------------------------- Footer styles --------------------------------------------------- */
+  
+  
+  
+  footer {
+    background-color: #4A1717;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ---------------------------------- Alterar pagina --------------------------------------------------- */
+  
+  
