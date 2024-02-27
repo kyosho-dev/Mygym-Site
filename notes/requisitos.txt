@@ -1,0 +1,239 @@
+
+
+
+
+
+
+
+Analize de requisitos para a academia
+
+modelo logico
+
+analize de banco de dados
+
+
+
+
+
+
+<!-- relacionamentos dos usuarios -->
+
+Usuario[n] (Possui)-> Fixa[1]
+Fixa[n] (Chama)-> Treinador[1]
+
+Usuario[1] (Possui)-> PERMISSÕES-USUARIO[n]
+TREINADOR[1] (Possui)-> PERMISSÕES-TREINADOR[n]
+ADMINISTRADOR[1] (Possui)-> PERMISSÕES-ADMINISTRADOR[n]
+
+<!-- relacionamentos das permissões com as regras -->
+
+PERMISSÕES-USUARIO[n] (Confere)-> REGRAS[1]
+PERMISSÕES-TREINADOR[n] (Confere)-> REGRAS[1]
+PERMISSÕES-ADMINISTRADOR[n] (Confere)-> REGRAS[1]
+
+
+<!-- Tabelas e recusos dos usuarios -->
+
+USUARIO{
+    ID_user
+    ID_regra *
+    ID_fixa  *
+    Email
+    Senha
+    Nome
+    Data_nacimento, idade
+    telefone
+    Sexo
+    Endereço
+    Unidade
+    Instrutor
+    Altura
+    Peso
+    Plano
+}
+
+FIXA{
+    ID_fixa
+    Ordem
+    Exercício (Agachamento, stiff, ...)
+    Séries
+    Repetições
+}
+
+<!-- tabelas dos funcionarios -->
+
+TREINADOR{
+    ID_treinador
+    Email
+    Senha
+    Nome
+    Data_nacimento, idade
+    telefone
+    Sexo
+    Endereço
+    Unidade
+    Formação
+    Experiência
+}
+
+ADMINISTRADOR{
+    ID_adm
+    Email
+    Senha
+    Nome
+    Data_nacimento, idade
+    telefone
+    Sexo
+    Endereço
+    Unidade
+    Formação
+    Experiência
+}
+
+<!-- tabelas de recursos -->
+
+ESTOQUE{
+    ID_item
+    Nome_maquinario
+    Data_requisição
+    Data_ultimoReparo
+    Custo_requisição
+    Custo_reparoPorMês
+    Custo_Total
+}
+
+<!-- tabelas de permissões e regras dos usuarios -->
+
+PERMISSÕES-USUARIO{
+    ID_regra
+    ID_user *
+    ID_regra *
+}
+
+PERMISSÕES-TREINADOR{
+    ID_regra
+    ID_user *
+    ID_regra *
+}
+
+PERMISSÕES-ADMINISTRADOR{
+    ID_regra
+    ID_user *
+    ID_regra *
+}
+
+REGRAS{
+    ID_regra
+    Regra_nome (ler, editar banco, ...)
+}
+
+
+
+1- control shit p  java: overir
+2- Create a Spring Boot project...
+3-
+4-
+5-
+6-
+7-
+8-
+9-
+
+casso queira mais dependencias vai no arquivo pom.xml
+botão direito edit starders e escolha mais dependencias
+
+
+https://start.spring.io
+
+
+
+esse comando salva vidas                    mvn clean install
+
+
+
+
+
+
+
+
+altera dados de uma tabela
+
+USE mygym;
+ALTER TABLE users MODIFY COLUMN ID_user INT AUTO_INCREMENT PRIMARY KEY;
+
+
+ID_user, Username, Email, Password, birth_date, telephone, Sex, Address, Unit, Instructor, Height, Weight, Plan
+
+
+
+soucer action gerate constructons {gera pra voce metodos construtores para você
+
+
+
+
+
+
+
+}
+
+
+
+medo genuino 
+
+# Configurações do Banco de Dados MySQL
+spring.datasource.url= jdbc:mysql://localhost:3306/mygym
+spring.datasource.username= root
+spring.datasource.password= admin
+spring.datasource.driver-class-name= com.mysql.cj.jdbc.Driver
+spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.MySQL8Dialect
+
+
+
+
+
+
+
+Relatorio de coisas pra fazer{
+    
+    --lado do usuario--
+
+    Criar as paginas Unidade, Treinos, Fixa é contato
+    Finalizar a animação da pagina index
+
+    refazer o desingner da pagina index para o celular
+    refazer o deingner da pagina de login para o celular
+
+    Fazer a pagina de cadastro
+
+
+
+    --lado  do servidor--
+
+    Deixar a tranferencia de dados quando logar mais segura
+    Deixar o back end mais seguro teminando de ver aquelas aulas
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
